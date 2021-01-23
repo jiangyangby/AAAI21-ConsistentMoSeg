@@ -5,14 +5,6 @@ function [ error, ClusterIdx, Affinitys, StructCs, Losses, ExtRes ] = ...
 temp = load(['../../Data/' Dataset '/SeqList.mat']);
 SeqList = temp.SeqList;
 seq_range = 1:length(SeqList);
-% seq_range = 29:29;
-% seq_range = 16:16;
-% seq_range = [16 29];
-% seq_range = 60:60;
-% seq_range = 58:58;
-seq_range = 4:4;
-% seq_range = 50:50;
-% seq_range = 57:57;
 
 %% motion segmentation on all sequences
 error = zeros(length(seq_range), 1);
